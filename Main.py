@@ -7,7 +7,6 @@ from Vizualize import plot_total_debt_by_age_category
 
 def main(file_path, db_uri):
     read_data(file_path, db_uri)
-    print(f"Данные из файла {file_path} были успешно записаны в базу данных.")
     get_top10_debtors(db_uri)
     print()
     get_top10_debtors_by_total_sum(db_uri)
